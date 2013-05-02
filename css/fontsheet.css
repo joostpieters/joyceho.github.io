@@ -2,7 +2,7 @@
 /* CSS Document */
 
 body {
-	font-family: Verdana, Geneva, sans-serif;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	text-align:center;
 }
 
@@ -21,7 +21,7 @@ a:active{
 }
 h1{
 	/*font-weight: lighter;*/
-	font-size:20px;
+	font-size:24px;
 	color:#D84E13;
 	font-variant:small-caps;
 	margin-left:10px;
@@ -34,17 +34,17 @@ h2 {
 	margin:0px;
 }
 h3{
-	font-size:12px;
+	font-size:18px;
 	font-weight: lighter;
 	padding:0px;
 	margin:0px;
 }
 p{
 	font-weight: lighter;
-	font-size:10px;
+	font-size:12px;
 }
 ul{
 	font-weight: lighter;
-	font-size:10px;
+	font-size:12px;
 }
 
