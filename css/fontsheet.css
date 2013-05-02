@@ -21,7 +21,7 @@ a:active{
 }
 h1{
 	/*font-weight: lighter;*/
-	font-size:24px;
+	font-size:30px;
 	color:#D84E13;
 	font-variant:small-caps;
 	margin-left:10px;
@@ -29,7 +29,7 @@ h1{
 h2 {
 	color: #333;
 	font-weight: lighter;
-	font-size:15px;
+	font-size:20px;
 	padding:0px;
 	margin:0px;
 }

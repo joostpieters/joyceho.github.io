@@ -8,13 +8,13 @@
 }
 #nav{
 	background-color:#DEE0D5;
-	height:30px;
+	height:40px;
 }
 #navContainer{
 	width:800px;
 }
 .navText{
-	font-size:12px;
+	font-size:14px;
 	padding-right:20px;
 	float:right;
 }
@@ -27,11 +27,12 @@
 
 .projectShowCase{
 	margin-left:50px;
+  margin-top:10px;
 	float:left;
 }
 .prjectDescription{
-	width:300px;
-	margin-top:20px;
+	width:350px;
+	margin-top:0px;
 	padding-left:20px;
 	float:right;
 	border-left-width: thin;
