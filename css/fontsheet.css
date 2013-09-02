@@ -34,7 +34,7 @@ h2 {
 	margin:0px;
 }
 h3{
-	font-size:18px;
+	font-size:14px;
 	font-weight: lighter;
 	padding:0px;
 	margin:0px;
@@ -48,3 +48,6 @@ ul{
 	font-size:12px;
 }
 
+b strong {
+font-weight:bold;
+}
