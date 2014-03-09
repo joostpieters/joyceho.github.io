@@ -2,61 +2,62 @@
 /* CSS Document */
 
 body {
-	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-	text-align:center;
+	padding-top: 70px;
 }
 
-.navText a{
-	font-weight: 300;
-	color:#000;
-} 
-
-a{
-	color:#000;
-	text-decoration:none;
+.table a{
+	text-decoration:underline;
 }
 
-a:hover{
-	background-color:#333;
-	color:#FFF;
-}
-a:active{
-	background-color: #666;
-	color:#FFF
-	;
+.table td {
+	text-align: left;
 }
 
-h1{
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 600;
-	font-size:30px;
+.table th {
+	font-size:18px;
+}
+
+.navbar-fixed-top {
+	background-color: #DEE0D5;
+}
+
+.nav a{
+	color: #000;
+    display:inline;
+}
+
+.navbar-fixed-top .navbar-nav > li > a:hover,
+.navbar-fixed-top .navbar-nav > li > a:focus {
+  text-decoration:underline;
+}
+
+.navbar-fixed-top .navbar-nav > .active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+	background-color: #ebece5;
+}
+
+.navbar-fixed-top .navbar-brand {
 	color:#D84E13;
-	font-variant:small-caps;
-	margin-left:10px;
-}
-h2 {
-	font-family: 'Open Sans', sans-serif;
-	color: #333;
-	font-weight: 400;
-	font-size:1.5em;
-	padding:0px;
-	margin:0px;
-}
-h3{
-	font-size:1em;
-	font-weight: 300;
-	padding:0px;
-	margin:0px;
-}
-p{
-	font-weight: 300;
-	font-size:0.8em;
-}
-ul{
-	font-weight: 300;
-	font-size:0.8em;
+	font-size: 24px;
+	font-weight:500;
 }
 
-b strong {
-font-weight:bold;
+.navbar-toggle .icon-bar {
+  display: block;
+  background-color: rgb(255,255,255);
+  margin-right:5px;
+}
+
+.container {
+	max-width: 780px;
+}
+
+#profile-pic {
+	margin:10px;
+	float:left;
+}
+
+#profile-text {
+	padding:10px;
+	overflow: hidden;
+	display:block;
 }
