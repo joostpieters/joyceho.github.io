@@ -49,10 +49,12 @@ body {
 
 .container {
 	max-width: 780px;
+	border-bottom:1px solid #DDD;
 }
 
-.footer {
-	text-align:right;
+#footer {
+		font-size:12px;
+		padding:10px;
 }
 
 .profile-pic {
