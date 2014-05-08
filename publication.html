@@ -9,6 +9,8 @@
 <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" type="text/css">
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 <link href="css/fontsheet.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.widgets.js"></script>
 </head>
 
 <body>
@@ -35,16 +37,18 @@
 
 <div class="container">
   <div class="table-responsive">
-    <table class="table table-hover">
+    <table id="pubtable" class="table table-hover">
       <thead>
         <tr>
           <th>Year</th>
+          <th>Type</th>
           <th>Publication</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>accepted</td>
+          <td>Journal</td>
           <td><b>J.C. Ho</b>, J. Ghosh, S. Steinhubl, W. Stewart, J.C. Denny, B.A. Malin, J. Sun.
             Limestone: High-throughput candidate phenotype generation via tensor factorization.
             <i>Journal of Biomedical Informatics (JBI)</i>.</td>
@@ -52,48 +56,56 @@
         <tr>
         <tr>
           <td>2014</td>
+          <td>Journal</td>
           <td><b>J.C. Ho</b>, C.H. Lee and J. Ghosh.
             Septic shock prediction for patients with missing data.
             <i>ACM Transactions on Management Information Systems (TMIS)</i>. (<a href="http://dl.acm.org/citation.cfm?id=2591676">pdf</a>) (<a href="bibtex/tmis2014.bib">bib</a>)</td>
         </tr>
         <tr>
         <td>2013</td>
+          <td>Conference</td>
           <td><b>J.C. Ho</b>, J. Ghosh. and K.P. Unnikrishnan.
             Risk prediction of a multiple sclerosis diagnosis.
             In <i>IEEE International Conference on Healthcare Informatics (ICHI)</i>. (<a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6680476">pdf</a>) (<a href="bibtex/ichi2013.bib">bib</a>)</td>
         </tr>
         <tr>
           <td>2013</td>
+          <td>Conference</td>
           <td>Y. Park, <b>J.C. Ho</b>, and J. Ghosh.
             Multivariate temporal symptomatic characterization of cardiac arrest.
             In <i>IEEE Engineering in Medicine and Biology Society (EMBC)</i>. (<a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6610227">pdf</a>) (<a href="bibtex/embc2013.bib">bib</a>)</td>
         </tr>
         <tr>
           <td>2013</td>
+          <td>Workshop</td>
           <td><b>J.C. Ho</b>, Y. Park, C.M. Carvalho, and J. Ghosh.
             DYNACARE-OP: Dynamic cardiac arrest risk estimation incorporating ordinal features.
             In <i>ICML Workshop: Role of Machine Learning in Transforming Healthcare</i>. (<a href="https://sites.google.com/site/icmlwhealth/workshop-organization/submissions/mlhealth13_submission_5.pdf">pdf</a>) (<a href="bibtex/whealth2013.bib">bib</a>)</td>
         </tr>
         <tr>
           <td>2013</td>
+          <td>Conference</td>
           <td><b>J.C. Ho</b>, Y. Park, C.M. Carvalho, and J. Ghosh.
             DYNACARE: Dynamic cardiac arrest risk estimation.
             In <i>Conference on Artificial Intelligence and Statistics (AISTATS)</i>. (<a href="http://jmlr.org/proceedings/papers/v31/ho13b.pdf">pdf</a>) (<a href="bibtex/aistats2013.bib">bib</a>)</td>
         </tr>
         <tr>
           <td>2012</td>
+          <td>Conference</td>
           <td>C.H. Lee, N.M. Arzeno, <b>J.C. Ho</b>, H. Vikalo, and J. Ghosh.
             An imputation-enhanced algorithm for ICU mortality prediction.
             In <i>Computing in Cardiology (CinC)</i>. (<a href="http://www.cinc.org/archives/2012/pdf/0253.pdf">pdf</a>) (<a href="bibtex/cinc2012.bib">bib</a>)</td>
         </tr>
         <tr>
           <td>2012</td>
+          <td>Workshop</td>
           <td><b>J.C. Ho</b>, C.H. Lee, and J. Ghosh.
             Imputation-enhanced prediction of septic shock in ICU patients.
             In <i>ACM SIGKDD Workshop on Health Informatics</i>. (<a href="http://www.cinc.org/archives/2012/pdf/0253.pdf">pdf</a>) (<a href="bibtex/hikdd2012.bib">bib</a>)</td>
         </tr>
         <tr>
           <td>2005</td>
+          <td>Conference</td>
           <td><b>J. Ho</b> and S.S. Intille.
             Using context-aware computing to reduce the perceived burden of interruptions from mobile devices.
             In <i>SIGCHI Conference on Human Factors in Computing Systems (CHI)</i>. (<a href="http://web.media.mit.edu/~intille/papers-files/HoIntille05.pdf">pdf</a>) (<a href="bibtex/chi2005.bib">bib</a>)</td>
@@ -104,6 +116,33 @@
 </div>
 <div id="footer"></div>
 <script>
-$("#footer").load("footer.html");
+ $(document).ready(function() {
+    $.extend($.tablesorter.themes.bootstrap, {
+      // these classes are added to the table. To see other table classes available,
+      // look here: http://twitter.github.com/bootstrap/base-css.html#tables
+      table      : 'table',
+      caption    : 'caption',
+      header     : 'bootstrap-header', // give the header a gradient background
+      footerRow  : '',
+      footerCells: '',
+      icons      : '', // add "icon-white" to make them white; this icon class is added to the <i> in the header
+      sortNone   : 'bootstrap-icon-unsorted',
+      sortAsc    : 'icon-chevron-up glyphicon glyphicon-chevron-up',     // includes classes for Bootstrap v2 & v3
+      sortDesc   : 'icon-chevron-down glyphicon glyphicon-chevron-down', // includes classes for Bootstrap v2 & v3
+      active     : '', // applied when column is sorted
+      hover      : '', // use custom css here - bootstrap class may not override it
+      filterRow  : '', // filter row class
+      even       : '', // odd row zebra striping
+      odd        : ''  // even row zebra striping
+    });
+
+    $("#pubtable").tablesorter({
+        theme : 'bootstrap',
+        headerTemplate : '{content} {icon}', // new in v2.7. Needed to add the bootstrap icon!
+        widgets : [ "uitheme"],
+        headers:{ 2:{ sorter:false } }
+    });
+  });
+  $("#footer").load("footer.html");
 </script>
 </body></html>
