@@ -57,6 +57,10 @@ body {
 		padding:10px;
 }
 
+.row {
+		margin:0px;
+}
+
 .profile-pic {
 	margin:10px;
 	float:left;
