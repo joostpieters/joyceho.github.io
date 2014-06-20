@@ -73,3 +73,7 @@ body {
 	overflow: hidden;
 	display:block;
 }
+
+#word-cloud {
+    width:100%;
+}
