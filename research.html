@@ -48,51 +48,94 @@
   </nav>
 <div class="container">
   <div class="row">
-    <div class="col-md-7">
-      <h3>Research Interests</h3>
-      <p>
-    	My research interests encompass the intersection of data mining / machine learning and healthcare analytics.
-      Thus far, my research has focused on
-      <ul>
-        <li>missing data, </li>
-        <li>disease-specific risk prediction, </li>
-        <li>temporal analysis, and </li>
-        <li>dimensionality reduction.</li>
-      </ul>
-      </p>
-      <p>
-        My thesis will primarily focus on high-throughput phenotyping algorithms for electronic health records.
-      </p>
-    </div>
-    <div class="col-md-5">
-      <img id="word-cloud" src="paper-cloud.png"/>
-    </div>
+  <h3>Research Projects</h3>
   </div>
-<h3>Summer Internships</h3>
-    <p>
-      <ul>
-        <li>
-          <b>Centers for Disease Control and Prevention</b>: <br>
-          Phenotype discovery for Chronic Fatigue Syndrome, mentored by <a href="http://www.researchgate.net/profile/Jin-Mann_Lin"><u>Jin-Mann (Sally) Lin</u></a>.
-        </li>
-        <li>
-          <b>IBM Research - Healthcare Analytics</b>: <br>
-          Dimensionality reduction for EHRs, mentored by <a href="http://www.sunlab.org/"><u>Jimeng Sun</u></a>.
-        </li>
-        <li>
-          <b>NorthShore University Health System - Center for Clinical and Research Informatics</b>: <br>
-          Risk prediction models for cardiac arrest and multiple sclerosis diagnosis, mentored by <a href="http://www.northshore.org/research/investigators/kp-unnikrishnan-phd/"><u>KP Unnikrishnan</u></a>.
-        </li>
-      </ul>
-  </p>
-<h3>Service</h3>
-<p>
-  <ul>
-    <li>PC Member, <a href="http://www.dmmh.org/dmmi14">AMIA 2014 Workshop on Data Mining for Medical Informatics: Electronic Phenotyping</a></li>
-    <li>Reviewer, <a href="http://www.springer.com/computer/database+management+%26+information+retrieval/journal/10618">Data Mining and Knowledge Discovery</a></li>
-    <li>Reviewer, <a href="http://tkdd.acm.org/">Transactions on Knowledge Discovery from Data</a></li>
-    <li>PC Member, <a href="http://kdd.csd.uwo.ca/BigMUD.html">BigMUD 2013: ICDM Workshop on Mining and Understanding from Big Data</a></li>
-  </ul>
+  <div class="row vertical-align">
+      <div class="col-xs-12 col-sm-3 col-md-3"><img class="news-pic" alt="Phenotype" src="images/nntf.png"/></div>
+      <div class="col-xs-12 col-sm-9 col-md-9">
+      <p><a href="http://www.sunlab.org/index.php/research/phenotyping/"><b>High-throughput Phenotyping on Electronic Health Records using Multi-Tensor Factorization</b></a></p>
+      <p>
+      Our research addresses the problem of transforming raw EHR data to medical concepts with minimal human intervention.
+      We posit the use of multi-relational tensor factorization approaches to generate concise and clinically relevant phenotypes.
+      The proposed computational framework will provide powerful, data-driven, and interpretable approaches for transforming high-dimensional EHR data into medical concepts.
+      </p>
+      <p>This work is done in collaboration with Georgia Institute of Technology, Vanderbilt University, and Northwestern University.</p>
+      </div>
+    </div>
+      <div class="row vertical-align">
+      <div class="col-xs-12 col-sm-3 col-md-3"><img class="news-pic" alt="CDC" src="images/cdc.png"/></div>
+      <div class="col-xs-12 col-sm-9 col-md-9">
+      <p><b>Medication usage amongst chronic fatigue syndrome patients</b></p>
+      <p>
+      Chronic Fatigue Syndrome (CFS) is a complex and devastating illness of unknown cause and origin.
+      Managing CFS can be as complex as the illness itself: patients are often on multiple medications to manage the symptoms.
+      It has presented a challenge to use conventional analytical approaches in examining the patterns and impacts of these medication uses.
+      We posit that tensor factorization can be used to improve our understanding of CFS as they provide a natural framework for flexible representation and analysis of multi-aspect data. 
+      </p>
+
+      <p>The project started as summer internship and is an ongoing collaboration with the CFS group. My collaborators at the CDC are <a href="http://www.researchgate.net/profile/Jin-Mann_Lin">Jin-Mann (Sally) Lin</a> and <a href="http://scholar.google.com/citations?user=5envSBkAAAAJ&hl=en">Brian M. Gurbaxani</a>.</p>
+      </div>
+    </div>
+    <div class="row vertical-align">
+      <div class="col-xs-12 col-sm-3 col-md-3"><img class="news-pic" alt="IBM Research" src="images/ibm.jpeg"/></div>
+      <div class="col-xs-12 col-sm-9 col-md-9">
+      <p><b>High-throughput phenotyping via tensor factorization</b></p>
+      <p>
+      Electronic health records (EHR) based phenotyping is the process of mapping EHR data to meaningful medical concepts, where each concept contains a set of clinical features.
+      Current phenotyping approaches require labor intensive supervision from experienced clinical professionals.
+      We proposed a nonnegative tensor factorization method to derive phenotype definitions with virtually no human supervision, representing the data source interactions naturally using tensors (a generalization of matrices). 
+      In particular, we investigate the interaction of diagnoses and medications among patients. 
+      The resulting tensor factors are reported as phenotype candidates that automatically reveal patient clusters on specific diagnoses and medications. 
+      Using the proposed method, multiple phenotypes can be identified simultaneously from data. </p>
+      <p>This work was performed during my summer internship in the Healthcare Analytics group, mentored by <a href="http://www.sunlab.org/">Jimeng Sun</a>.</p>
+      </div>
+    </div>
+    <div class="row vertical-align">
+      <div class="col-xs-12 col-sm-3 col-md-3"><img class="news-pic" alt="DYNACARE" src="images/cat.png"/></div>
+      <div class="col-xs-12 col-sm-9 col-md-9">
+      <p><b>DYNACARE: Dynamic cardiac arrest risk estimation</b></p>
+      <p>A semi-supervised time-series framework to predict the cardiac arrest time for high-risk ICU patients.
+      We represent a patient's cardiac arrest risk trajectory (CAT) using a single latent (hidden) process.
+      A cardiac arrest event is defined as two temporal patterns in CAT: (i) a gradient-based signature, where we assumed two heterogeneous dynamics of the risk factor (a healthy and risky state) governed the differences in the clinical measurements; or (ii) a locality-based signature based on the threshold model commonly used in toxicology to encapsulate the idea that the patient is "safe" provided the CAT is below a specific value.</p>
+      <p>This work is a collaboration with <a href="https://sites.google.com/site/yubindata/">Yubin Park</a> and <a href="http://faculty.mccombs.utexas.edu/carlos.carvalho/">Carlos Carvalho</a>.</p>
+      </div>
+    </div>
+    <div class="row vertical-align">
+      <div class="col-xs-12 col-sm-3 col-md-3"><img class="news-pic" alt="NorthShore" src="images/northshore.jpg"/></div>
+      <div class="col-xs-12 col-sm-9 col-md-9">
+      <p><b>Multiple Sclerosis Risk Prediction Model</b></p>
+      <p>Multiple sclerosis (MS) is a chronic, disabling autoimmune disease that affects the central nervous system.
+      Early diagnosis and treatment of the disease have been shown to be effective at slowing the development of disabilities.
+      However, early MS diagnosis is difficult because symptoms are intermittent and shared with other diseases. 
+      We investigated the use of commonly available data in electronic medical records (EMRs) to create a risk prediction model; thereby helping clinicians perform the difficult task of diagnosing an MS patient.
+      </p>
+      <p>This work was performed during my summer internship in NorthShore Clinical Research Center, mentored by <a href="http://www.northshore.org/research/investigators/kp-unnikrishnan-phd/">KP Unnikrishnan</a>.</p>
+      </div>
+    </div>
+    <div class="row vertical-align">
+      <div class="col-xs-12 col-sm-3 col-md-3"><img class="news-pic" alt="NorthShore" src="images/missing-icon.png"/></div>
+      <div class="col-xs-12 col-sm-9 col-md-9">
+      <p><b>Septic shock prediction for patients with partial observations</b></p>
+      <p>Sepsis is one of the leading causes of mortality in intensive care unit (ICU) patients.
+      However, development of highly accurate predictive models for medical applications is often complicated by the nature of clinical data, which are typically noisy and inconsistently gathered. 
+      A commonly used solution to avoid missing data is to simply ignore subjects or features that have missing data, which can cause dramatic decreases in sample sizes or feature spaces.
+      Our work investigates the role and impact of imputation methods while building predictive models for septic shock. By limiting our features to commonly observed, mostly non-invasive clinical measurements, we build better predictive models that are generalizable to broader groups of ICU patients.
+      </p>
+      <p>This work was performed in collaboration with <a href="https://sites.google.com/site/chenghlee/">Cheng H. Lee</a>.</p>
+      </div>
+    </div>
+      <div class="row vertical-align">
+      <div class="col-xs-12 col-sm-3 col-md-3"><img class="news-pic" alt="PhysioNet 2012" src="images/challenge.png"/></div>
+      <div class="col-xs-12 col-sm-9 col-md-9">
+      <p><b><a href="http://physionet.org/challenge/2012/">PhysioNet / Computing in Cardiology 2012 Challenge</a></b></p>
+      <p>
+      The focus was to develop methods for patient-specific prediction of in-hospital mortality.
+      We used 42 variables (37 time-varying measurements) collected during the first two days of an ICU stay to predict which patients survive their hospitalizations, and which patients do not.
+      Our entry placed in the top 10 (of 23) for both evaluation categories.
+      </p>
+      <p>My teammates included <a href="https://sites.google.com/site/chenghlee/">Cheng H. Lee</a>, <a href="https://wncg.org/people/students/natalia-arzeno-gonzalez">Natalia M Arzeno</a>, and <a href="http://users.ece.utexas.edu/~hvikalo/">Haris Vikalo</a>.</p>
+      </div>
+    </div>
 </div>
 <div id="footer"></div>
 <script>

@@ -43,7 +43,7 @@ body {
 
 .navbar-fixed-top .navbar-brand {
 	color:#D84E13;
-	font-size: 24px;
+	font-size: 28px;
 	font-weight:500;
 }
 
@@ -67,8 +67,14 @@ body {
 }
 
 .profile-pic {
-	margin:10px;
-	float:left;
+	padding:10px;
+	float:right;
+    width:100%;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
 }
 
 .profile-text {
@@ -76,6 +82,11 @@ body {
 	padding:10px;
 	overflow: hidden;
 	display:block;
+}
+
+.news-pic {
+    width:100%;
+    padding:10px;
 }
 
 #word-cloud {
