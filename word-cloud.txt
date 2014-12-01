@@ -1,0 +1,32 @@
+extract phenotypes patient claims records sparse nonnegative tensor factorization.
+Marble: high-throughput phenotypes EHR sparse nonnegative tensor factorization.
+Limestone: high-throughput phenotypes nonnegative tensor factorization.
+Septic shock prediction patients missing data.
+risk prediction multiple sclerosis diagnosis.
+multivariate temporal symptomatic characterization cardiac arrest.
+DYNACARE: dynamic cardiac arrest risk estimation incorporating ordinal features
+DYNACARE: dynamic cardiac arrest risk estimation
+imputation algorithm ICU mortality prediction missing data
+imputation prediction septic shock ICU patients missing data
+
+EHR increasingly important source new clinical information insights diagnoses prognoses, and cost-effective patient treatment and management
+formidable challenges EHR
+EHR diverse array of data including structured information diagnoses, medications, and lab results, molecular sequences, unstructured clinical progress notes, and social network information.
+reasoning based  concise clinical concepts (phenotypes) high-dimensional EHR. useful phenotypes capture multiple inter-related aspects patients associated treatments representative substantial portions patient population
+ EHR simple phenotypes sophisticated and multifaceted ones.
+
+data-driven approaches.
+clinical concepts dimensionality reduction lower dimensional latent space.
+interactions different data sources EHR are challenge to model hampering our ability  leverage traditional analytic frameworks.
+standard dimensionality reduction techniques derive concise clinically relevant medical concepts.
+develop clinically interpretable models for EHR data.
+
+transforming raw EHR medical concepts minimal human intervention.
+multi-relational tensor factorization approaches that generate concise clinically relevant phenotypes.
+extract phenotypes succinct set of properties predictive modeling, onset of specific diseases to indicators of readmission or fraud.
+state space model approaches to dynamic track a patient's cardiac arrest risk and nonnegative factorization  tensor to generate high-throughput phenotypes.
+clinically interpretable models that improve on baseline approaches.
+
+multi-relational tensor factorization approaches multifaceted, high-throughput phenotypes.
+nonnegative tensor factorization model to handle multi-tensors to derive concise phenotypes, refine phenotypes efficiently knowledge feedback process, and develop a smoothed time-evolving phenotype stream.
+proposed computational framework will provide powerful, data-driven, and interpretable approaches for transforming high-dimensional EHR into medical concepts.
