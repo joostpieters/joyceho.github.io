@@ -73,8 +73,12 @@ body {
 }
 
 .vertical-align {
-    display: flex;
-    align-items: center;
+ align-items: center;
+}
+@media (min-width: 600px) {
+ .vertical-align{
+   display: flex;
+ }
 }
 
 .profile-text {
