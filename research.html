@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" type="text/css">
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/packery/1.3.2/packery.pkgd.min.js"></script>
 <link href="css/fontsheet.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -45,96 +46,114 @@
   <div class="row">
   <h3>Research Projects</h3>
   </div>
-  <div class="row vertical-align">
-      <div class="col-xs-12 col-sm-3 col-md-3"><img class="news-pic" alt="Phenotype" src="images/nntf.png"/></div>
-      <div class="col-xs-12 col-sm-9 col-md-9">
-      <p><a href="http://www.sunlab.org/index.php/research/phenotyping/"><b>High-throughput Phenotyping on Electronic Health Records using Multi-Tensor Factorization</b></a></p>
-      <p>
-      Our research addresses the problem of transforming raw EHR data to medical concepts with minimal human intervention.
-      We posit the use of multi-relational tensor factorization approaches to generate concise and clinically relevant phenotypes.
-      The proposed computational framework will provide powerful, data-driven, and interpretable approaches for transforming high-dimensional EHR data into medical concepts.
-      </p>
-      <p>This work is done in collaboration with Georgia Institute of Technology, Vanderbilt University, and Northwestern University.</p>
+  <div id="masonry-container">
+<!--      class="js-masonry"
+       data-masonry-options='{ "columnWidth": ".item",
+                               "itemSelector": ".item",
+                               "percentPosition": true }'> -->
+    <div class="item w3 purple-border">
+      <div class="item-pic-div">
+        <img class="item-pic" alt="Phenotype" src="images/nntf.png"/>
+      </div>
+      <div class="item-text purple">
+        <p><a href="http://www.sunlab.org/index.php/research/phenotyping/"><b>High-throughput Phenotyping on Electronic Health Records using Multi-Tensor Factorization</b></a></p>
+        <p>
+        Our research addresses the problem of transforming raw electronic health record (EHR) data to medical concepts with minimal human intervention.
+        We posit the use of multi-relational tensor factorization approaches to generate concise and clinically relevant phenotypes.
+        The proposed computational framework will provide powerful, data-driven, and interpretable approaches for transforming high-dimensional EHR data into medical concepts.
+        </p>
+        <p>Collaboration with Georgia Institute of Technology, Vanderbilt University, and Northwestern University.</p>
       </div>
     </div>
-      <div class="row vertical-align">
-      <div class="col-xs-12 col-sm-3 col-md-3"><img class="news-pic" alt="CDC" src="images/cdc.png"/></div>
-      <div class="col-xs-12 col-sm-9 col-md-9">
-      <p><b>Medication usage amongst chronic fatigue syndrome patients</b></p>
-      <p>
-      Chronic Fatigue Syndrome (CFS) is a complex and devastating illness of unknown cause and origin.
-      Managing CFS can be as complex as the illness itself: patients are often on multiple medications to manage the symptoms.
-      It has presented a challenge to use conventional analytical approaches in examining the patterns and impacts of these medication uses.
-      We posit that tensor factorization can be used to improve our understanding of CFS as they provide a natural framework for flexible representation and analysis of multi-aspect data. 
-      </p>
-
-      <p>The project started as summer internship and is an ongoing collaboration with the CFS group. My collaborators at the CDC are <a href="http://www.researchgate.net/profile/Jin-Mann_Lin">Jin-Mann (Sally) Lin</a> and <a href="http://scholar.google.com/citations?user=5envSBkAAAAJ&hl=en">Brian M. Gurbaxani</a>.</p>
+    <div class="item w13 red-border">
+      <div class="item-pic-div">
+        <img class="item-pic" alt="CDC" src="images/cdc.png"/>
+      </div>
+      <div class="item-text red">
+        <p><b>Medication usage amongst CFS patients</b></p>
+        <p>
+        Chronic Fatigue Syndrome (CFS) is a complex and devastating illness of unknown cause and origin. Patients are often on multiple medications to manage the symptoms.
+        We use tensor factorization to improve our understanding of CFS as they provide a natural framework for flexible representation and analysis of multi-aspect data.</p>
+        <p>This is an ongoing collaboration (started as a summer internship) with <a href="http://www.researchgate.net/profile/Jin-Mann_Lin">Jin-Mann (Sally) Lin</a> and <a href="http://scholar.google.com/citations?user=5envSBkAAAAJ&hl=en">Brian M. Gurbaxani</a> from the CDC.</p>
       </div>
     </div>
-    <div class="row vertical-align">
-      <div class="col-xs-12 col-sm-3 col-md-3"><img class="news-pic" alt="IBM Research" src="images/ibm.jpeg"/></div>
-      <div class="col-xs-12 col-sm-9 col-md-9">
-      <p><b>High-throughput phenotyping via tensor factorization</b></p>
-      <p>
-      Electronic health records (EHR) based phenotyping is the process of mapping EHR data to meaningful medical concepts, where each concept contains a set of clinical features.
-      Current phenotyping approaches require labor intensive supervision from experienced clinical professionals.
-      We proposed a nonnegative tensor factorization method to derive phenotype definitions with virtually no human supervision, representing the data source interactions naturally using tensors (a generalization of matrices). 
-      In particular, we investigate the interaction of diagnoses and medications among patients. 
-      The resulting tensor factors are reported as phenotype candidates that automatically reveal patient clusters on specific diagnoses and medications. 
-      Using the proposed method, multiple phenotypes can be identified simultaneously from data. </p>
-      <p>This work was performed during my summer internship in the Healthcare Analytics group, mentored by <a href="http://www.sunlab.org/">Jimeng Sun</a>.</p>
+    <div class="item green-border">
+      <div class="item-pic-div">
+        <img class="item-pic" alt="IBM Research" src="images/ibm.jpeg"/>
+      </div>
+      <div class="item-text green">
+        <p><b>High-throughput phenotyping via tensor factorization</b></p>
+        <p>
+        EHR based phenotyping is the process of mapping EHR data to meaningful medical concepts, where each concept contains a set of clinical features.
+        We developed a nonnegative tensor factorization method to derive phenotype definitions with virtually no human supervision, representing the data source interactions naturally using tensors (a generalization of matrices). 
+        The resulting tensor factors automatically reveal patient clusters on specific diagnoses and medications.</p>
+        <p>This work was performed during my summer internship in the Healthcare Analytics group, mentored by <a href="http://www.sunlab.org/">Jimeng Sun</a>.</p>
       </div>
     </div>
-    <div class="row vertical-align">
-      <div class="col-xs-12 col-sm-3 col-md-3"><img class="news-pic" alt="DYNACARE" src="images/cat.png"/></div>
-      <div class="col-xs-12 col-sm-9 col-md-9">
+    <div class="item w2 blue-border">
+      <div class="item-pic-div">
+        <img class="item-pic" alt="DYNACARE" src="images/cat.png"/>
+      </div>
+      <div class="item-text blue">
       <p><b>DYNACARE: Dynamic cardiac arrest risk estimation</b></p>
       <p>A semi-supervised time-series framework to predict the cardiac arrest time for high-risk ICU patients.
-      We represent a patient's cardiac arrest risk trajectory (CAT) using a single latent (hidden) process.
-      A cardiac arrest event is defined as two temporal patterns in CAT: (i) a gradient-based signature, where we assumed two heterogeneous dynamics of the risk factor (a healthy and risky state) governed the differences in the clinical measurements; or (ii) a locality-based signature based on the threshold model commonly used in toxicology to encapsulate the idea that the patient is "safe" provided the CAT is below a specific value.</p>
-      <p>This work is a collaboration with <a href="https://sites.google.com/site/yubindata/">Yubin Park</a> and <a href="http://faculty.mccombs.utexas.edu/carlos.carvalho/">Carlos Carvalho</a>.</p>
-      </div>
-    </div>
-    <div class="row vertical-align">
-      <div class="col-xs-12 col-sm-3 col-md-3"><img class="news-pic" alt="NorthShore" src="images/northshore.jpg"/></div>
-      <div class="col-xs-12 col-sm-9 col-md-9">
-      <p><b>Multiple Sclerosis Risk Prediction Model</b></p>
-      <p>Multiple sclerosis (MS) is a chronic, disabling autoimmune disease that affects the central nervous system.
-      Early diagnosis and treatment of the disease have been shown to be effective at slowing the development of disabilities.
-      However, early MS diagnosis is difficult because symptoms are intermittent and shared with other diseases. 
-      We investigated the use of commonly available data in electronic medical records (EMRs) to create a risk prediction model; thereby helping clinicians perform the difficult task of diagnosing an MS patient.
+      A single latent process is used to represent each patient's cardiac arrest risk and the cardiac arrest event is defined as a temporal signature in the latent process.
+      Our algorithm is inspired by financial econometric and yields interpretability and predictability of a cardiac arrest event.
       </p>
-      <p>This work was performed during my summer internship in NorthShore Clinical Research Center, mentored by <a href="http://www.northshore.org/research/investigators/kp-unnikrishnan-phd/">KP Unnikrishnan</a>.</p>
+      <p>This work is a collaboration with <a href="https://sites.google.com/site/yubindata/">Yubin Park</a> and <a href="http://faculty.mccombs.utexas.edu/carlos.carvalho/">Carlos Carvalho</a>.</p>
+    </div>
+    </div>
+    <div class="item orange-border">
+      <div class="item-pic-div">
+        <img class="item-pic" alt="NorthShore" src="images/northshore.png"/>
+      </div>
+      <div class="item-text orange">
+        <p><b>Multiple Sclerosis Risk Prediction Model</b></p>
+        <p>Multiple sclerosis (MS) is a chronic, disabling autoimmune disease that affects the central nervous system.
+        Early diagnosis and treatment of the disease have been shown to be effective at slowing the development of disabilities.
+        However, early MS diagnosis is difficult because symptoms are intermittent and shared with other diseases. 
+        We investigated the use of commonly available data in electronic medical records to create a risk prediction model; thereby helping clinicians perform the difficult task of diagnosing an MS patient.
+        </p>
+        <p>This work was performed during my summer internship in NorthShore Clinical Research Center, mentored by <a href="http://www.northshore.org/research/investigators/kp-unnikrishnan-phd/">KP Unnikrishnan</a>.</p>
       </div>
     </div>
-    <div class="row vertical-align">
-      <div class="col-xs-12 col-sm-3 col-md-3"><img class="news-pic" alt="NorthShore" src="images/missing-icon.png"/></div>
-      <div class="col-xs-12 col-sm-9 col-md-9">
+    <div class="item w2 purple-border">
+      <div class="item-pic-div">
+        <img class="item-pic" alt="Missing Data" src="images/missing-icon.png"/>
+      </div>
+      <div class="item-text purple">
       <p><b>Septic shock prediction for patients with partial observations</b></p>
       <p>Sepsis is one of the leading causes of mortality in intensive care unit (ICU) patients.
       However, development of highly accurate predictive models for medical applications is often complicated by the nature of clinical data, which are typically noisy and inconsistently gathered. 
-      A commonly used solution to avoid missing data is to simply ignore subjects or features that have missing data, which can cause dramatic decreases in sample sizes or feature spaces.
       Our work investigates the role and impact of imputation methods while building predictive models for septic shock. By limiting our features to commonly observed, mostly non-invasive clinical measurements, we build better predictive models that are generalizable to broader groups of ICU patients.
       </p>
       <p>This work was performed in collaboration with <a href="https://sites.google.com/site/chenghlee/">Cheng H. Lee</a>.</p>
       </div>
     </div>
-      <div class="row vertical-align">
-      <div class="col-xs-12 col-sm-3 col-md-3"><img class="news-pic" alt="PhysioNet 2012" src="images/challenge.png"/></div>
-      <div class="col-xs-12 col-sm-9 col-md-9">
-      <p><b><a href="http://physionet.org/challenge/2012/">PhysioNet / Computing in Cardiology 2012 Challenge</a></b></p>
-      <p>
-      The focus was to develop methods for patient-specific prediction of in-hospital mortality.
-      We used 42 variables (37 time-varying measurements) collected during the first two days of an ICU stay to predict which patients survive their hospitalizations, and which patients do not.
-      Our entry placed in the top 10 (of 23) for both evaluation categories.
-      </p>
-      <p>My teammates included <a href="https://sites.google.com/site/chenghlee/">Cheng H. Lee</a>, <a href="https://wncg.org/people/students/natalia-arzeno-gonzalez">Natalia M Arzeno</a>, and <a href="http://users.ece.utexas.edu/~hvikalo/">Haris Vikalo</a>.</p>
+    <div class="item red-border">
+      <div class="item-pic-div">
+        <img class="item-pic" alt="PhysioNet 2012" src="images/challenge.png"/>
+      </div>
+      <div class="item-text red">
+        <p><b><a href="http://physionet.org/challenge/2012/">PhysioNet 2012 Challenge</a></b></p>
+        <p>
+        The focus was to develop methods for patient-specific prediction of in-hospital mortality.
+        We used 42 variables (37 time-varying measurements) collected during the first two days of an ICU stay to predict which patients survive their hospitalizations, and which patients do not.
+        Our entry placed in the top 10 (of 23) for both evaluation categories.
+        </p>
+        <p>Our team included <a href="https://sites.google.com/site/chenghlee/">Cheng H. Lee</a> <a href="https://wncg.org/people/students/natalia-arzeno-gonzalez"> and Natalia M Arzeno</a>.</p>
       </div>
     </div>
 </div>
 <div id="footer"></div>
 <script>
 $("#footer").load("footer.html");
+var container = document.querySelector('#masonry-container');
+var pckry = new Packery( container, {
+  // options
+  itemSelector: '.item',
+  gutter: 10
+});
 </script>
 </body>
 </html>
