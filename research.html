@@ -154,6 +154,10 @@ var pckry = new Packery( container, {
   itemSelector: '.item',
   gutter: 10
 });
+
+$container.imagesLoaded( function() {
+  $container.packery();
+});
 </script>
 </body>
 </html>
