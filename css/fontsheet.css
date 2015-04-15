@@ -5,6 +5,11 @@ body {
 	padding-top: 70px;
 }
 
+.title-center {
+    margin: 0 auto;
+    text-align: center;
+}
+
 .table a{
 	text-decoration:underline;
 }
