@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Joyce Ho</title>
+<meta content="Research" />
+<!--This is some key words you input to help the searchability of your site -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" type="text/css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/packery/1.3.2/packery.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.1.8/imagesloaded.pkgd.min.js"></script>
+<link href="css/fontsheet.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <nav class="navbar navbar-fixed-top" role="navigation">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Joyce Ho</a>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+       </button>
+      </div>
+      <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a href="research.html"><i class="fa fa-pencil"></i> Research</a>
+              </li>
+              <li>
+                <a href="publication.html"><i class="fa fa-book"></i> Publications</a>
+              </li>
+              <li class>
+                <a href="teaching.html"><i class="fa fa-university"></i> Teaching</a>
+              </li>
+          </ul>
+      </div>
+    </div>
+  </nav>
+<div class="container">
+  <div class="title-center">
+    <div class="row">
+      <h3>CS 584: Big Data Analytics</h3>
+    </div>
+  </div>
+  <div class="row">
+    <h4>Course Description</h4>
+    The course covers scalable machine learning and data mining algorithms for large/complex data. Topics include large-scale optimization techniques, hashing, recommendation systems, and tensor factorization. This will be structured as a seminar course with emphasis on public data sets such as Kaggle competitions, MovieLens, and various healthcare datasets.
+    There will be introductory lectures that set the context and provide reviews of relevant material.
+    </div>
+  <br>
+  <div class="row">
+    <h4>Course Prerequisites</h4>
+    Graduate Data Mining (CS 570) and familiarity with Python, Matlab, or R.
+  </div>
+  <br>
+  <div class="row">
+    <h4>Tentative Schedule</h4>
+    <table class="table">
+      <thead>
+        <tr><th>#</th><th>Topic</th><th>Subtopic</th><th width="45%">Readings</th><th>Presenter</th></tr></thead>
+      <tbody>
+        <!-- section 1 -->
+        <tr><td>1</td><td>Large-Scale Learning Techniques</td><td>Stochastic Gradient Descent</td>
+          <td><ul>
+            <li>Large Scale Online Learning [<a href="http://papers.nips.cc/paper/2365-large-scale-online-learning.pdf">Bottou &amp; LeCun, 2003</a>]</li>
+            <li>Large-Scale Machine Learning with Stochastic Gradient Descent [<a href="http://leon.bottou.org/publications/pdf/compstat-2010.pdf">Bottou, 2010</a>]</li>
+            <li>Stochastic Gradient Descent Tricks [<a href="http://research.microsoft.com/pubs/192769/tricks-2012.pdf">Bottou, 2012</a>]</li>
+            <li>HogWild! [<a href="http://arxiv.org/pdf/1106.5730v2.pdf">Niu et al., 2011</a>]</li></ul>
+          </td><td>Instructor</td></tr>
+        <tr><td></td><td></td><td>Alternating direction method of multipliers</td><td>
+          <ul>
+            <li>Distributed Optimization and Statistical Learning via the Alternating Direction Method of Multipliers [<a href="http://stanford.edu/~boyd/papers/pdf/admm_distr_stats.pdf">Boyd et al., 2011</a>]</li>
+            <li>Augmented Lagrangian and Alternating Direction Methods for Convex Optimization: A Tutorial and Some Illustrative Computational Results [<a href="http://rutcor.rutgers.edu/pub/rrr/reports2012/32_2012.pdf">Eckstein, 2012</a>]</li>
+          </ul></td><td>Instructor</td></tr>
+        <tr><td></td><td></td><td>Sampling</td>
+          <td><ul>
+            <li>Big Data Bootstrap [<a href="http://web.cs.ucla.edu/~ameet/blb_icml2012_final.pdf">Kleiner et al., 2012</a>]</li>
+            <li>Scalable and Robust Bayesian Inference via the Median Posterior [<a href="http://jmlr.org/proceedings/papers/v32/minsker14.pdf">Minsker et al., 2014</a>]</li>
+          </ul></td><td>Instructor</td></tr>
+        <!-- section 2 -->
+        <tr><td>2</td><td>Nearest Neighbor Search</td><td>KD-tree</td><td>
+          <ul>
+            <li>An introductory tutorial on kd-trees [<a href="http://www.autonlab.org/autonweb/14665/version/2/part/5/data/moore-tutorial.pdf">Moore, 1991</a>]</li>
+            <li>An Optimal Algorithm for Approximate Nearest Neighbor Searching in Fixed Dimensions [<a href="https://graphics.stanford.edu/courses/cs468-06-fall/Papers/03%20AMNSW%20-%20JACM.pdf">Arya et al., 1998</a>]
+          </li></ul></td><td>Instructor</td></tr>
+        <tr><td></td><td></td><td>Locality-sensitive hashing</td>
+          <td><ul>
+            <li>Chapter 3 of Mining of Massive Datasets [<a href="http://infolab.stanford.edu/~ullman/mmds/ch3.pdf">Leskovec et al, 2014</a>]</li>
+            <li>Locality-Sensitive Hashing for Finding Nearest Neighbors [<a href="http://www.slaney.org/malcolm/yahoo/Slaney2008-LSHTutorial.pdf">Slaney &amp; Casey, 2008</a>]</li>
+            <li>Near-Optimal Hashing Algorithms for Approximate Nearest Neighbor in High Dimensions [<a href="https://people.csail.mit.edu/indyk/p117-andoni.pdf">Andoni &amp; Indyk, 2008</a>]</li>
+            <li>Hashing for Similarity Search: A Survey [<a href="http://arxiv.org/pdf/1408.2927.pdf">Wang et al., 2014</a>]</li>
+            <li>Coding for Random Projections [<a href="http://jmlr.org/proceedings/papers/v32/lie14.pdf">Li et al., 2014</a></li>
+        </ul></td><td>Instructor + students</td></tr>
+        <tr><td></td><td></td><td>Sketches</td><td>
+          <ul>
+            <li>Sketch Techniques for Approximate Query Processing [<a href="http://dimacs.rutgers.edu/~graham/pubs/papers/sk.pdf">Cormode, 2011</a>]</li>
+            <li>Conditional Random Sampling: A Sketch-based Sampling Technique for Sparse Data[<a href="http://papers.nips.cc/paper/2980-conditional-random-sampling-a-sketch-based-sampling-technique-for-sparse-data.pdf">Li et al., 2006</a>]</li>
+            <li>One Sketch For All: Theory and Application of Conditional Random Sampling [<a href="http://papers.nips.cc/paper/3572-one-sketch-for-all-theory-and-application-of-conditional-random-sampling.pdf">Li et al, 2008</a>]</li>
+            <li>FLAG: Fast Large-Scale Graph Construction for NLP [<a href="http://www.umiacs.umd.edu/~amit/Papers/goyalFlagEMNLP12.pdf">Goyal et al., 2012</a>]</li>
+          </ul>
+        </td><td>Instructor + students</td></tr>
+        <!-- section 3 -->
+        <tr><td>3</td><td>Matrix Factorization</td><td>Distributed matrix factorization</td>
+          <td><ul>
+            <li>Scalable Collaborative Filtering Approaches for Large Recommender Systems[<a href="http://rs1.sze.hu/~gtakacs/download/jmlr_2009.pdf">Takacs et al., 2009</a>]</li>
+            <li>Large-Scale Matrix Factorization with Distributed Stochastic Gradient Descent [<a href="http://people.mpi-inf.mpg.de/~rgemulla/publications/gemulla11dsgd.pdf">Gemulla et al., 2011</a>]</li>
+            <li>A Fast Parallel SGD for Matrix Factorization in Shared Memory Systems [<a href="https://www.csie.ntu.edu.tw/~cjlin/papers/libmf/libmf.pdf">Zhuang et al., 2013</a>]</li>
+            <li>Divide-and-Conquer Matrix Factorization [<a href="http://web.cs.ucla.edu/~ameet/dfc.pdf">MacKey et al., 2011</a>]</li>
+            <li>Parallel Matrix Factorization for Recommender Systems [<a href="http://www.cs.utexas.edu/~inderjit/public_papers/kais-pmf.pdf">Yu et al., 2014</a>]</li>
+          </ul></td><td>Students</td></tr>
+        <!-- section 4 -->
+        <tr><td>4</td><td>Tensor Factorization</td><td>Large scale tensor factorization</td>
+          <td><ul>
+            <li>PARCUBE: Sparse Parallelizable CANDECOMP-PARAFAC Tensor Decomposition [<a href="https://www.cs.cmu.edu/~epapalex/papers/parCube-TKDD15.pdf">Papalexakis, 2015</a>]</li>
+            <li>FlexiFaCT: Scalable Flexible Factorization of Coupled Tensors on Hadoop [<a href="http://epubs.siam.org/doi/abs/10.1137/1.9781611973440.13">Beutel et al., 2014</a></li>
+            <li>Scalable Bayesian Non-Negative Tensor Factorization for Massive Count Data [<a href="http://arxiv.org/abs/1508.04211">Hu et al., 2015</a></li>
+          </ul></td><td>Students</td></tr>
+      </tbody>
+    </table>
+  </div>
+<br>
+</div>
+<div id="footer"></div>
+<script>
+$("#footer").load("footer.html");
+var container = document.querySelector('#masonry-container');
+var pckry = new Packery( container, {
+  // options
+  itemSelector: '.item',
+  gutter: 10
+});
+imagesLoaded( container, function() {
+  pckry.layout();
+});
+</script>
+</body>
+</html>
