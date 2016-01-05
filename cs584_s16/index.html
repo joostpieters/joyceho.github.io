@@ -60,70 +60,75 @@
   </div>
   <br>
   <div class="row">
-    <h4>Tentative Schedule</h4>
+    <h4>Schedule</h4>
     <table class="table">
       <thead>
-        <tr><th>#</th><th>Topic</th><th>Subtopic</th><th width="45%">Readings</th><th>Presenter</th></tr></thead>
+        <tr><th>Topic</th><th>Subtopic</th><th width="40%">Readings</th><th>Presenter</th><th>Slides</th></tr></thead>
       <tbody>
+        <tr><td>Introduction</td><td></td><td></td><td>Instructor</td><td>
+        <ul class="readings">
+          <li><a href="slides/intro-1.pdf">Intro</a></li>
+          <li><a href="slides/convexopt-2.pdf">Convex Optimization</a></li></ul>
+        </td></tr>
         <!-- section 1 -->
-        <tr><td>1</td><td>Large-Scale Learning Techniques</td><td>Stochastic Gradient Descent</td>
-          <td><ul>
+        <tr><td rowspan="3">Large-Scale Learning Techniques</td><td>Stochastic Gradient Descent</td>
+          <td><ul class="readings">
             <li>Large Scale Online Learning [<a href="http://papers.nips.cc/paper/2365-large-scale-online-learning.pdf">Bottou &amp; LeCun, 2003</a>]</li>
             <li>Large-Scale Machine Learning with Stochastic Gradient Descent [<a href="http://leon.bottou.org/publications/pdf/compstat-2010.pdf">Bottou, 2010</a>]</li>
             <li>Stochastic Gradient Descent Tricks [<a href="http://research.microsoft.com/pubs/192769/tricks-2012.pdf">Bottou, 2012</a>]</li>
             <li>HogWild! [<a href="http://arxiv.org/pdf/1106.5730v2.pdf">Niu et al., 2011</a>]</li></ul>
-          </td><td>Instructor</td></tr>
-        <tr><td></td><td></td><td>Alternating direction method of multipliers</td><td>
-          <ul>
+          </td><td>Instructor</td><td></td></tr>
+        <tr><td>Alternating direction method of multipliers</td><td>
+          <ul class="readings">
             <li>Distributed Optimization and Statistical Learning via the Alternating Direction Method of Multipliers [<a href="http://stanford.edu/~boyd/papers/pdf/admm_distr_stats.pdf">Boyd et al., 2011</a>]</li>
             <li>Augmented Lagrangian and Alternating Direction Methods for Convex Optimization: A Tutorial and Some Illustrative Computational Results [<a href="http://rutcor.rutgers.edu/pub/rrr/reports2012/32_2012.pdf">Eckstein, 2012</a>]</li>
             <li>A distributed algorithm for fitting generalized additive models [<a href="https://web.stanford.edu/~boyd/papers/pdf/admm_gam.pdf">Chu et al., 2013</a>]</li>
-          </ul></td><td>Instructor</td></tr>
-        <tr><td></td><td></td><td>Sampling</td>
-          <td><ul>
+          </ul></td><td>Instructor</td><td></td></tr>
+        <tr><td>Sampling</td>
+          <td><ul class="readings">
             <li>Big Data Bootstrap [<a href="http://web.cs.ucla.edu/~ameet/blb_icml2012_final.pdf">Kleiner et al., 2012</a>]</li>
             <li>Scalable and Robust Bayesian Inference via the Median Posterior [<a href="http://jmlr.org/proceedings/papers/v32/minsker14.pdf">Minsker et al., 2014</a>]</li>
-          </ul></td><td>Instructor</td></tr>
+          </ul></td><td>Instructor</td><td></td></tr>
         <!-- section 2 -->
-        <tr><td>2</td><td>Nearest Neighbor Search</td><td>KD-tree</td><td>
-          <ul>
+        <tr><td rowspan="3">Nearest Neighbor Search</td><td>KD-tree</td><td>
+          <ul class="readings">
             <li>An introductory tutorial on kd-trees [<a href="http://www.autonlab.org/autonweb/14665/version/2/part/5/data/moore-tutorial.pdf">Moore, 1991</a>]</li>
             <li>An Optimal Algorithm for Approximate Nearest Neighbor Searching in Fixed Dimensions [<a href="https://graphics.stanford.edu/courses/cs468-06-fall/Papers/03%20AMNSW%20-%20JACM.pdf">Arya et al., 1998</a>]
-          </li></ul></td><td>Instructor</td></tr>
-        <tr><td></td><td></td><td>Locality-sensitive hashing</td>
-          <td><ul>
+          </li></ul></td><td>Instructor</td><td></td></tr>
+        <tr><td>Locality-sensitive hashing</td>
+          <td><ul class="readings">
             <li>Chapter 3 of Mining of Massive Datasets [<a href="http://infolab.stanford.edu/~ullman/mmds/ch3.pdf">Leskovec et al, 2014</a>]</li>
             <li>Locality-Sensitive Hashing for Finding Nearest Neighbors [<a href="http://www.slaney.org/malcolm/yahoo/Slaney2008-LSHTutorial.pdf">Slaney &amp; Casey, 2008</a>]</li>
             <li>Near-Optimal Hashing Algorithms for Approximate Nearest Neighbor in High Dimensions [<a href="https://people.csail.mit.edu/indyk/p117-andoni.pdf">Andoni &amp; Indyk, 2008</a>]</li>
             <li>Hashing for Similarity Search: A Survey [<a href="http://arxiv.org/pdf/1408.2927.pdf">Wang et al., 2014</a>]</li>
             <li>Coding for Random Projections [<a href="http://jmlr.org/proceedings/papers/v32/lie14.pdf">Li et al., 2014</a>]</li>
-        </ul></td><td>Instructor + students</td></tr>
-        <tr><td></td><td></td><td>Sketches</td><td>
-          <ul>
+        </ul></td><td>Instructor + students</td><td></td></tr>
+        <tr><td>Sketches</td><td>
+          <ul class="readings">
             <li>Sketch Techniques for Approximate Query Processing [<a href="http://dimacs.rutgers.edu/~graham/pubs/papers/sk.pdf">Cormode, 2011</a>]</li>
             <li>Conditional Random Sampling: A Sketch-based Sampling Technique for Sparse Data [<a href="http://papers.nips.cc/paper/2980-conditional-random-sampling-a-sketch-based-sampling-technique-for-sparse-data.pdf">Li et al., 2006</a>]</li>
             <li>One Sketch For All: Theory and Application of Conditional Random Sampling [<a href="http://papers.nips.cc/paper/3572-one-sketch-for-all-theory-and-application-of-conditional-random-sampling.pdf">Li et al, 2008</a>]</li>
             <li>FLAG: Fast Large-Scale Graph Construction for NLP [<a href="http://www.umiacs.umd.edu/~amit/Papers/goyalFlagEMNLP12.pdf">Goyal et al., 2012</a>]</li>
           </ul>
-        </td><td>Instructor + students</td></tr>
+        </td><td>Instructor + students</td><td></td></tr>
         <!-- section 3 -->
-        <tr><td>3</td><td>Matrix Factorization</td><td>Distributed matrix factorization</td>
-          <td><ul>
+        <tr><td>Matrix Factorization</td><td>Distributed matrix factorization</td>
+          <td><ul class="readings">
             <li>(Introduction) Matrix Factorization Techniques for Recommender Systems [<a href="https://datajobs.com/data-science-repo/Recommender-Systems-[Netflix].pdf">Koren et al., 2009</a>]</li>
             <li>Scalable Collaborative Filtering Approaches for Large Recommender Systems [<a href="http://rs1.sze.hu/~gtakacs/download/jmlr_2009.pdf">Takacs et al., 2009</a>]</li>
             <li>Large-Scale Matrix Factorization with Distributed Stochastic Gradient Descent [<a href="http://people.mpi-inf.mpg.de/~rgemulla/publications/gemulla11dsgd.pdf">Gemulla et al., 2011</a>]</li>
             <li>A Fast Parallel SGD for Matrix Factorization in Shared Memory Systems [<a href="https://www.csie.ntu.edu.tw/~cjlin/papers/libmf/libmf.pdf">Zhuang et al., 2013</a>]</li>
             <li>Divide-and-Conquer Matrix Factorization [<a href="http://web.cs.ucla.edu/~ameet/dfc.pdf">MacKey et al., 2011</a>]</li>
             <li>Parallel Matrix Factorization for Recommender Systems [<a href="http://www.cs.utexas.edu/~inderjit/public_papers/kais-pmf.pdf">Yu et al., 2014</a>]</li>
-          </ul></td><td>Students</td></tr>
+          </ul></td><td>Students</td><td></td></tr>
         <!-- section 4 -->
-        <tr><td>4</td><td>Tensor Factorization</td><td>Large scale tensor factorization</td>
-          <td><ul>
+        <tr><td>Tensor Factorization</td><td>Large scale tensor factorization</td>
+          <td><ul class="readings">
             <li>(Introduction) Tensor Decompositions and Applications [<a href="http://epubs.siam.org/doi/pdf/10.1137/07070111X">Kolda &amp; Bader, 2009</a>]</li>
             <li>PARCUBE: Sparse Parallelizable CANDECOMP-PARAFAC Tensor Decomposition [<a href="https://www.cs.cmu.edu/~epapalex/papers/parCube-TKDD15.pdf">Papalexakis, 2015</a>]</li>
             <li>FlexiFaCT: Scalable Flexible Factorization of Coupled Tensors on Hadoop [<a href="http://epubs.siam.org/doi/abs/10.1137/1.9781611973440.13">Beutel et al., 2014</a>]</li>
             <li>Scalable Bayesian Non-Negative Tensor Factorization for Massive Count Data [<a href="http://arxiv.org/abs/1508.04211">Hu et al., 2015</a>]</li>
-          </ul></td><td>Students</td></tr>
+          </ul></td><td>Students</td><td></td></tr>
       </tbody>
     </table>
   </div>
