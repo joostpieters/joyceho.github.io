@@ -259,11 +259,11 @@ VALUES
  789);
 
 /* Part D */
-SELECT c.name, b.tittle, p.name, p.address
+SELECT c.name, b.title, p.name, p.address
 FROM customer c, shopping_cart s, item_cart ic, book b, publisher p
 WHERE c.email = s.cemail
 AND ic.cEmail=s.cEmail
 AND ic.cartSequence=s.cartSequence
 AND ic.ISBN = b.ISBN
 AND b.publiname = p.name
-ORDER BY c.name
+ORDER BY c.name;
