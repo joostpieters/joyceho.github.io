@@ -11,12 +11,16 @@ body {
 }
 
 .table a{
-	text-decoration:underline;
+    text-decoration:underline;
+}
+
+.table > tbody > tr > td {
+    vertical-align:middle;
 }
 
 .table td {
 	min-width:80px;
-	text-align: left;
+	text-align:left;
 }
 
 #pub-content {
@@ -80,6 +84,7 @@ body {
 .vertical-align {
  align-items: center;
 }
+
 @media (min-width: 600px) {
  .vertical-align{
    display: flex;
@@ -189,4 +194,15 @@ body {
 ul.readings {
     margin-left:0;
     padding-left:0;
+}
+
+td.plan-sec-header {
+  background-color: #000000;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+td.side-borders {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
 }
