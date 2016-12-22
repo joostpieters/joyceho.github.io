@@ -123,9 +123,7 @@ body {
     padding: 10px;
 }
 
-.item {
-    width: 24%;
-}
+.item { width: 24%; }
 
 .item.w2 { width: 48%; }
 .item.w3 { width: 65%; }
