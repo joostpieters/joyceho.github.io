@@ -16,4 +16,4 @@ FROM department;
 /* List the projects under department number 5 */
 SELECT *
 FROM project
-WHERE dnumber = 5;
+WHERE dnum = 5;
