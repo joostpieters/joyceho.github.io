@@ -84,7 +84,7 @@ AND role LIKE '%Officer%';
 SELECT *
 FROM director
 WHERE id NOT IN
-    (SELECT id
+    (SELECT did
      FROM movie, movie_director
      WHERE year = 2005
      AND id = mid)
