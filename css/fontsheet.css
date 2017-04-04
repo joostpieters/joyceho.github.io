@@ -120,9 +120,9 @@ body {
 }
 
 .item { width: 24%; }
-
 .item.w2 { width: 48%; }
 .item.w3 { width: 65%; }
+.item.w23 { width: 55%; }
 .item.w13 { width: 32%; }
 
 .item.blue-border {
