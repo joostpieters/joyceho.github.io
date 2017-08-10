@@ -1,0 +1,539 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>CS 534 - Machine Learning [Fall 2017]</title>
+    <meta content="Research" />
+    <!--This is some key words you input to help the searchability of your site -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/packery/1.3.2/packery.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.1.8/imagesloaded.pkgd.min.js"></script>
+    <link href="../css/fontsheet.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-fixed-top" role="navigation">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">Joyce Ho</a>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="../research.html"><i class="fa fa-pencil"></i> Research</a>
+            </li>
+            <li>
+              <a href="../publication.html"><i class="fa fa-book"></i> Publications</a>
+            </li>
+            <li class>
+              <a href="../teaching.html"><i class="fa fa-university"></i> Teaching</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="title-center">
+        <div class="row">
+          <div class="col-sm-offset-2 col-sm-8">
+            <h3>CS 534: Machine Learning</h3>
+          </div>
+          <div class="col-sm-2">
+            <div class="dropdown">
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              About
+              <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#logistic">Logistics</a></li>
+                <li><a href="#grade">Grading</a></li>
+                <li><a href="#late">Late Policies</a></li>
+                <li><a href="#honor">Honor Code</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Course Overview</h3>
+          </div>
+          <div class="panel-body">
+            <p>
+              Machine learning is an exciting field of computer science that impacts many applications both from a consumer standpoint (e.g., Microsoft Kinect, iPhone's Siri, Netflix recommendations) and the sciences and medicines (e.g., predicting genome-protein interactions, detecting tumors, personalized medicine). In this course, students will learng the fundamental theory and algorithms of machine learning and how to apply machine learning to solve problems.
+            </p>
+            <p><b>Prerequisites</b>: A course in linear algebra and previous exposure to statistics and probability theory. Homeworks and project will require programming ability in Python, Matlab, or R.
+            </p>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Schedule</h3><a name="schedule"></a>
+          </div>
+          <div class="panel-body">
+            <table class="table">
+              <thead>
+                <tr><th class="col-md-1">#</th><th class="col-md-1">Date</th><th class="col-md-2">Topic</th><th class="col-md-2">Materials</th><th class="col-md-4">References</th><th class="col-md-3">Assignments</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td align="center" colspan="6" class="plan-sec-header">Introduction</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>8/23</td>
+                  <td class="side-borders">Overview &amp; Course Logistics</td>
+                  <td class="side-borders">
+                  </td>
+                  <td class="side-borders">
+                    <ul>
+                      <li>Chapter 1 (Hastie et al.)</li>
+                      <li><a href="http://www.cs.ubc.ca/~murphyk/MLbook/pml-intro-22may12.pdf">Chapter 1 (Murphy)</a></li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Homework 0 (due 8/27)</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>8/29</td>
+                  <td class="side-borders">Crash Course in Optimization and Statistics</td>
+                  <td class="side-borders"></td>
+                  <td class="side-borders">
+                    <ul>
+                      <li>Convex optimization notes <a href="note/cs229-cvxopt.pdf">Part I</a> and  <a href="note/cs229-cvxopt2.pdf">II</a> from Stanford's machine learning class</li>
+                    </ul>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td align="center" colspan="6" class="plan-sec-header">Supervised Learning I</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>8/31</td>
+                  <td class="side-borders" rowspan="2">Linear Regression  &amp; Statistical Decision Theory</td>
+                  <td class="side-borders" rowspan="2"></td>
+                  <td class="side-borders" rowspan="2">
+                    <ul>
+                      <li>Chapter 2.1 - 2.4 (Hastie et al.)</li>
+                      <li>Chapter 3.1 - 3.4 (Hastie et al.)</li>
+                      <li>Chapter 17.1 - 17.2 <a href="http://web4.cs.ucl.ac.uk/staff/D.Barber/textbook/171216.pdf">(Barber)</a></li>
+                      <li><a href="http://faculty.mccombs.utexas.edu/carlos.carvalho/teaching/Section4.pdf">Prof. Carlos Carvalho MLR Slides</a></li>
+                    </ul>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>9/5</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>9/7</td>
+                  <td class="side-borders" rowspan="2">Naive Bayes &amp; Linear Classification</td>
+                  <td class="side-borders" rowspan="2"></td>
+                  <td class="side-borders" rowspan="2">
+                    <ul>
+                      <li>Chapter 4.1 - 4.4 (Hastie et al.)</li>
+                      <li>Chapter 3.2 - 3.5 (<a href="https://www.cs.cmu.edu/~tom/mlbook/NBayesLogReg.pdf">Mitchell</a>) </li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Homework 1 (due 9/22)</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>9/12</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td align="center" colspan="6" class="plan-sec-header">Model Assessment &amp; Selection</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>9/14</td>
+                  <td class="side-borders">Model Assessment</td>
+                  <td class="side-borders"></td>
+                  <td class="side-borders" rowspan="3">
+                    <ul>
+                      <li>Chapters 7, 8 (Hastie et al.)</li>
+                    </ul>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>9/19</td>
+                  <td class="side-borders" rowspan="2">Bootstrap &amp; Model Selection</td>
+                  <td class="side-borders" rowspan="2"></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>9/21</td>
+                  <td>
+                    <ul>
+                      <li>Homework 2 (due 10/6)</li>
+                    </ul>
+                  </td>
+                </td>
+              </tr>
+              <tr>
+                <td>10</td>
+                <td>9/26</td>
+                <td class="side-borders">Learning Theory</td>
+                <td class="side-borders"></td>
+                <td class="side-borders">
+                  <ul>
+                    <li><a href="http://cs229.stanford.edu/notes/cs229-notes4.pdf">Learning theory notes</a> from Stanford's ML class</li>
+                    <li>Chapter 12 (<a href="http://ciml.info/dl/v0_99/ciml-v0_99-ch12.pdf">Daume</a>)</li>
+                  </ul>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td align="center" colspan="6" class="plan-sec-header">Supervised Learning II</td>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>9/28</td>
+                <td class="side-borders" rowspan="2">Boosting, Trees &amp; Additive Models</a></td>
+                <td class="side-borders" rowspan="2"></td>
+                <td class="side-borders" rowspan="2">
+                  <ul>
+                    <li>Chapters 9, 10 (Hastie et al.)</li>
+                    <li>Chapter 3 (<a href="http://www.cs.princeton.edu/courses/archive/spr07/cos424/papers/mitchell-dectrees.pdf">Mitchell</a>)</li>
+                    <li>Cynthia Rudin's <a href="https://ocw.mit.edu/courses/sloan-school-of-management/15-097-prediction-machine-learning-and-statistics-spring-2012/lecture-notes/MIT15_097S12_lec08.pdf">notes</a> on decision trees</li>
+                  </ul>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>10/3</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td>10/5</td>
+                <td class="side-borders">Ensembles &amp; Random Forests</td>
+                <td class="side-borders"></td>
+                <td class="side-borders">
+                  <ul>
+                    <li>Chapters 15, 16 (Hastie et al.)</li>
+                    <li>Breiman's <a href="http://dl.acm.org/citation.cfm?id=570182">paper</a> on random forests</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>Homework 3 (due 10/20)</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td>10/12</td>
+                <td class="side-borders" rowspan="2">Support Vector Machines</td>
+                <td class="side-borders" rowspan="2"></td>
+                <td class="side-borders" rowspan="2">
+                  <ul>
+                    <li>Chapter 12 (Hastie et al.)</li>
+                    <li>Chapter 15 <a href="http://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/index.html">(Shalev-Shwartz &amp; Ben-David)</a></li>
+                    <li><a href="http://cs229.stanford.edu/notes/cs229-notes3.pdf">SVM notes</a> from Stanford's ML class</li>
+                    <li><a href="https://davidrosenberg.github.io/ml2015/docs/svm-notes.pdf">SVM notes</a> from NYU's ML class</li>
+                    <li>Chapter 11 (<a href="http://ciml.info/">Daume</a>)</li>
+                  </ul>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>15</td>
+                <td>10/17</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>16</td>
+                <td>10/19</td>
+                <td class="side-borders" rowspan="2">Neural Networks</td>
+                <td class="side-borders" rowspan="2"></td>
+                <td class="side-borders" rowspan="2">
+                  <ul>
+                    <li>Chapter 11 (Hastie et al.)</li>
+                    <li>Chapter 1-3 <a href="http://neuralnetworksanddeeplearning.com/index.html">(Nielsen)</a></li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>Homework 4 (due 11/3)</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>17</td>
+                <td>10/24</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>18</td>
+                <td>10/26</td>
+                <td class="side-borders">K Nearest Neighbors</td>
+                <td class="side-borders"></td>
+                <td class="side-borders">
+                  <ul>
+                    <li>Chapter 13 (Hastie et al.)</li>
+                  </ul>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td align="center" colspan="6" class="plan-sec-header">Unsupervised Learning</td>
+              </tr>
+              <tr>
+                <td>19</td>
+                <td>10/31</td>
+                <td class="side-borders">Dimensionality Reduction</td>
+                <td class="side-borders"></td>
+                <td class="side-borders" rowspan="2">
+                  <ul>
+                    <li>Chapter 14 (Hastie et al.)</li>
+                    <li>Chapter 23 - 23.1 <a href="http://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/index.html">(Shalev-Shwartz &amp; Ben-David)</a></li>
+                    <li><a href="http://cs229.stanford.edu/notes/cs229-notes10.pdf">PCA notes</a> from Stanford's ML class</li>
+                  </ul>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>20</td>
+                <td>11/2</td>
+                <td class="side-borders"">Clustering &amp; Mixture Models</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td align="center" colspan="6" class="plan-sec-header">Midterm</td>
+              </tr>
+              <tr>
+                <td>21</td>
+                <td>11/9</td>
+                <td class="side-borders">Midterm</td>
+                <td class="side-borders"></td>
+                <td class="side-borders"></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>22</td>
+                <td>11/9</td>
+                <td class="side-borders">Project Madness &amp; TBD</td>
+                <td class="side-borders"></td>
+                <td class="side-borders"></td>
+                <td>
+                 <ul>
+                    <li>Homework 5 (due 12/1)</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td align="center" colspan="6" class="plan-sec-header">Other Topics</td>
+              </tr>
+              <tr>
+                <td>23</td>
+                <td>11/14</td>
+                <td class="side-borders">Hidden Markov Models</td>
+                <td class="side-borders"></td>
+                <td class="side-borders">
+                  <ul>
+                    <li>Murphy's <a href="http://www.cs.ubc.ca/~murphyk/Papers/intro_gm.pdf">intro to graphical models</a></li>
+                    <li><a href="http://digital.cs.usu.edu/~cyan/CS7960/hmm-tutorial.pdf">HMM tutorial</a> by Blunsom</li>
+                  </ul>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>24</td>
+                  <td>11/16</td>
+                  <td class="side-borders" rowspan=2>Deep Learning</td>
+                  <td class="side-borders" rowspan=2></td>
+                  <td class="side-borders" rowspan=2></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>25</td>
+                  <td>11/21</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>26</td>
+                  <td>11/28</td>
+                  <td class="side-borders">Topic Models</td>
+                  <td class="side-borders"></td>
+                  <td class="side-borders">
+                    <ul>
+                      <li>Blei's <a href="http://www.cs.columbia.edu/~blei/papers/Blei2012.pdf">review article</a></li>
+                    </ul>
+                  </td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>27</td>
+                  <td>11/30</td>
+                  <td class="side-borders">Recommendation Systems</td>
+                  <td class="side-borders"></td>
+                  <td class="side-borders"><ul>
+                    <li>Chapter 9 (<a href="http://infolab.stanford.edu/~ullman/mmds/ch9.pdf">Leskovec et al.</a>)</li>
+                    <li><a href="http://ieeexplore.ieee.org/document/5197422">Paper</a> by Koren et al.</li>
+                  </ul>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td align="center" colspan="6" class="plan-sec-header">Project Presentations</td>
+              </tr>
+              <tr>
+                <td>28</td>
+                <td>12/5</td>
+                <td class="side-borders" rowspan="2">Presentations</td>
+                <td class="side-borders" rowspan="2"></td>
+                <td class="side-borders" rowspan="2"></td>
+              </tr>
+              <tr>
+                <td>29</td>
+                <td>12/7</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Course Logistics</h3><a name="logistic"></a>
+          </div>
+          <div class="panel-body">
+            <h4>Piazza</h4>
+            <p>All announcements, assignment clarifications, and slide corrections will be posted on Piazza. Make sure to check the site on a regular basis.</p>
+            <h4>Office Hours</h4>
+            <p><b>Joyce Ho</b>: M 1:30 PM - 3:30 PM, W 9:30 AM - 12:00 PM @ MSC W414<br>
+            <i>Note: Office hours may change from time to time, in which case an announcement will be made on Piazza</i>.
+            <h4>Textbook</h4>
+            <ul>
+              <li>Required: <i>The Elements of Statistical Learning: Data Mining, Inference, and Prediction)</i>, by Trevor Hastie, Robert Tibshirani &amp; Jerome Friedman</li>
+              <li>Supplemental: <i>Machine Learning: a Probabilistic Perspective</i>, by Kevin Murphy</li>
+              <li>Supplemental: <i>Pattern Recognition and Machine Learning</i>, by Christopher Bishop</li>
+              <ul>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Course Grading</h3><a name="grade"></a>
+              </div>
+              <div class="panel-body">
+                <p></p>
+                <div class="row">
+                  <div class="col-sm-offset-2 col-sm-8">
+                    <table class="table">
+                      <thead><tr><th>Component</th><th>Weight</th></tr></thead>
+                      <tbody>
+                        <tr><td>Homeworks</td><td>35.0%</td></tr>
+                        <tr><td>Midterm</td><td>17.5%</td></tr>
+                        <tr><td>Project</td><td>40.0%</td></tr>
+                        <tr><td>Participation</td><td>&nbsp; 7.5%</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Project</h3><a name="project"></a>
+              </div>
+              <div class="panel-body">
+                <p>
+                  You are encouraged to work in groups of 2-3 for the term project to analyze a real-world dataset. The goal is to either develop a novel algorithm (novelty bonus points will be given depending on the level of difficulty) or try various ML existing algorithms on the dataset. The project is a critical part of the course and a significant factor in determining your grade. Teams are required to hand in a project proposal, a final project report and prepare two presentations on their work.
+                </p>
+                <p>
+                By default, all team members will receive the same score for their project. If a team feels that this is unfair perhaps due to HIGHLY imbalanced contributions, then every team member needs to provide feedback on the contribution of each of the other team members via email before submission of the final report. After that I will need to have a meeting with all the members together to mediate.
+                </p>
+                <p>
+                More details on projects are posted on Piazza under the projects folder.</p>
+                </p>
+                <div class="row">
+                  <div class="col-sm-offset-2 col-sm-8">
+                    <table class="table">
+                      <thead><tr><th>Component</th><th>Due Date</th><th>Weight</th></tr></thead>
+                      <tbody>
+                        <tr><td>Proposal</td><td>10/25</td><td>15%</td></tr>
+                        <tr><td>Madness</td><td>11/9 (in class)</td><td>10%</td></tr>
+                        <tr><td>Presentation</td><td>12/5-12/7 (in class)</td><td>25%</td></tr>
+                        <tr><td>Report</td><td>12/12</td><td>50%</td></tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Homework &amp; Exam Policies</h3><a name="late"></a>
+              </div>
+              <div class="panel-body">
+                <h4>Homework:</h4>
+                <ul>
+                  <li>Homework is due electronically on Gradescope/Canvas at 11:59 PM.</li>
+                  <li>Each student receives <b>6</b> late days that can be used across the 5 homeworks throughout the semester. These late days extend the deadline for 24 hours.</li>
+                  <li>A maximum of <b>3</b> late days can be used on a given homework.</li>
+                  <li>Late days apply to the entire homework, so handing in one problem late counts as a late day towards the whole homework.</li>
+                  <li><b>No credit</b> will be given if you submit the homework late and have run out of late days.</li>
+                </ul>
+                <h4>Exam:</h4>
+                <ul>
+                  <li>The midterm must be taken at the required time.</li>
+                  <li>Requests for rescheduling the midterm exam will only be considered if the request is made at least a week prior to the exam date.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Honor Code</h3><a name="honor"></a>
+              </div>
+              <div class="panel-body">
+                <p>All class work is governed by the College Honor Code and Departmental Policy. It is acceptable and encouraged to discuss homeworks with other students. However, this should be noted on your submitted homework and all code and writeup must be written by yourself. Any code and writeup that is found to be similar is grounds for an honor code investigation by the Director of Gradute Studies, Laney Graduate School, and the honor council.
+                </div>
+              </div>
+            </div>
+          </div>
+        </body>
+      </html>
